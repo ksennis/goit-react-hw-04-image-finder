@@ -8,6 +8,7 @@ export const Modal = ({ imageUrl, onClose }) => {
         }
     }
 
+    // eslint-disable-next-line
     useEffect(() => {
         document.addEventListener('keydown', onClickClose);
 

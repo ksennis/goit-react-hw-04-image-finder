@@ -37,6 +37,7 @@ export const App = () => {
     }))
   }
 
+  // eslint-disable-next-line
   useEffect(() => {
     if (!page) return;
 

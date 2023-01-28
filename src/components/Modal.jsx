@@ -1,6 +1,5 @@
-import { Component } from "react";
-import PropTypes from 'prop-types';
 import { useEffect } from "react";
+import PropTypes from 'prop-types';
 
 export const Modal = ({ imageUrl, onClose }) => {
     const onClickClose = (e) => {  

@@ -37,7 +37,6 @@ export const App = () => {
     }))
   }
 
-  // eslint-disable-next-line
   useEffect(() => {
     if (!page) return;
 
@@ -52,7 +51,7 @@ export const App = () => {
     .finally(() => {
       setIsLoading(false);
     });
-  }, [imageDescription, page]);
+  }, [imageDescription, page]); // eslint-disable-line
 
   const onSelectPost = (postData) => {
     setSelectedPost(postData);

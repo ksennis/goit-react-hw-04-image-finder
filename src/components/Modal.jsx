@@ -8,14 +8,13 @@ export const Modal = ({ imageUrl, onClose }) => {
         }
     }
 
-    // eslint-disable-next-line
     useEffect(() => {
         document.addEventListener('keydown', onClickClose);
 
         return () => {
             document.removeEventListener('keydown', onClickClose);
         }
-    }, []);
+    }, []); // eslint-disable-line
     
     return (
         <div className="overlay" onClick={onClose}>
